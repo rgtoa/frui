@@ -1,0 +1,18 @@
+.frui-field-rangeslider-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--accent-color, #007bff); /* Use CSS variable with a default */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.frui-field-rangeslider-control::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--accent-color, #007bff); /* Use CSS variable with a default */
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}

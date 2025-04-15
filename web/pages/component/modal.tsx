@@ -349,8 +349,8 @@ export default function Page() {
                 {_('Loaders')}
               </Link>
               <div className="flex-grow"></div>
-              <Link className="text-t2" href="/component/table">
-                {_('Tables')}
+              <Link className="text-t2" href="/component/progressbar">
+                {_('Progress Bar')}
                 <i className="fas fa-arrow-right ml-2"></i>
               </Link>
             </div>

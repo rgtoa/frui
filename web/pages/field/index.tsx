@@ -302,6 +302,25 @@ export default function Home() {
                 </h2>
               </div>
             </div>
+            <div className="block basis-full sm:basis-1/2 md:basis-1/3 text-center cursor-pointer"
+              onClick={() => router.push('/field/rangeslider')}
+            >
+              <div className="m-2 border border-b2 rounded overflow-hidden">
+                <div className="flex items-center justify-center h-[130px] w-full bg-b1 px-3">
+                  {/* Range Slider */}
+                  <input 
+                    type="range" 
+                    min="0" 
+                    max="100" 
+                    defaultValue="50" 
+                    className="w-full"
+                  />
+                </div>
+                <h2 className="my-2 font-semibold text-center uppercase">
+                  {_('Range Slider')}
+                </h2>
+              </div>
+            </div>
             <div 
               className="block basis-full sm:basis-1/2 md:basis-1/3 text-center cursor-pointer"
               onClick={() => router.push('/field/select')} 
@@ -482,16 +501,6 @@ export default function Home() {
                 </div>
                 <h2 className="my-2 font-semibold text-center uppercase">
                   {_('JSON')}
-                </h2>
-              </div>
-            </div>
-            <div className="block basis-full sm:basis-1/2 md:basis-1/3 text-center cursor-pointer">
-              <div className="m-2 border border-b2 rounded overflow-hidden">
-                <div className="flex items-center justify-center h-[130px] w-full bg-b1 px-3">
-                  Unlocks at 18,000 downloads
-                </div>
-                <h2 className="my-2 font-semibold text-center uppercase">
-                  {_('Range Slider')}
                 </h2>
               </div>
             </div>

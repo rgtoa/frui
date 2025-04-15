@@ -466,13 +466,13 @@ export default function Home() {
             </p>
 
             <div className="flex items-center border-t border-b1 my-8 py-8">
-              <Link className="text-t2" href="/component/modal">
+              <Link className="text-t2" href="/component/progressbar">
                 <i className="fas fa-arrow-left mr-2"></i>
-                {_('Modals')}
+                {_('Progress Bar')}
               </Link>
               <div className="flex-grow"></div>
-              <Link className="text-t2" href="/field">
-                {_('Fields')}
+              <Link className="text-t2" href="/component/Toast">
+                {_('Toast')}
                 <i className="fas fa-arrow-right ml-2"></i>
               </Link>
             </div>

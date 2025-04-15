@@ -11,6 +11,8 @@ import Badge from 'frui/dist/Badge';
 import Button from 'frui/dist/Button';
 import Loader from 'frui/dist/Loader';
 import Table, { Thead, Trow, Tcol } from 'frui/dist/Table';
+import ProgressBar from 'frui/dist/ProgressBar';
+import Toast from 'frui/dist/Toast';
 
 export default function Home() {
   //hooks
@@ -114,6 +116,20 @@ export default function Home() {
                 </h2>
               </div>
             </div>
+            <div className="block basis-1/2 md:basis-1/3 text-center cursor-pointer"
+              onClick={() => router.push('/component/progressbar')}
+            >
+              <div className="m-2 border border-b2 rounded overflow-hidden">
+                <div className="flex items-center justify-center h-[100px] w-full bg-b1">
+                  <div className="relative w-3/4 h-4 bg-gray-300 rounded">
+                    <ProgressBar value={50} max={100} className="h-4 bg-blue-500 rounded" />
+                  </div>
+                </div>
+                <h2 className="my-2 font-semibold text-center uppercase">
+                  {_('Progress Bar')}
+                </h2>
+              </div>
+            </div>
             <div 
               className="block basis-1/2 md:basis-1/3 text-center cursor-pointer"
               onClick={() => router.push('/component/table')} 
@@ -133,6 +149,17 @@ export default function Home() {
                 </div>
                 <h2 className="my-2 font-semibold text-center uppercase">
                   {_('Table')}
+                </h2>
+              </div>
+            </div>
+            <div className="block basis-1/2 md:basis-1/3 text-center cursor-pointer"
+              onClick={() => router.push('/component/toast')}
+            >
+              <div className="m-2 border border-b2 rounded overflow-hidden">
+                <div className="flex items-center justify-center h-[100px] w-full bg-b1 px-3">
+                </div>
+                <h2 className="my-2 font-semibold text-center uppercase">
+                  {_('Toast')}
                 </h2>
               </div>
             </div>
@@ -169,16 +196,6 @@ export default function Home() {
             <div className="block basis-1/2 md:basis-1/3 text-center cursor-pointer">
               <div className="m-2 border border-b2 rounded overflow-hidden">
                 <div className="flex items-center justify-center h-[100px] w-full bg-b1 px-3">
-                  Unlocks at 6,000 downloads
-                </div>
-                <h2 className="my-2 font-semibold text-center uppercase">
-                  {_('Progress Bar')}
-                </h2>
-              </div>
-            </div>
-            <div className="block basis-1/2 md:basis-1/3 text-center cursor-pointer">
-              <div className="m-2 border border-b2 rounded overflow-hidden">
-                <div className="flex items-center justify-center h-[100px] w-full bg-b1 px-3">
                   Unlocks at 8,000 downloads
                 </div>
                 <h2 className="my-2 font-semibold text-center uppercase">
@@ -203,16 +220,6 @@ export default function Home() {
                 </div>
                 <h2 className="my-2 font-semibold text-center uppercase">
                   {_('Tooltip')}
-                </h2>
-              </div>
-            </div>
-            <div className="block basis-1/2 md:basis-1/3 text-center cursor-pointer">
-              <div className="m-2 border border-b2 rounded overflow-hidden">
-                <div className="flex items-center justify-center h-[100px] w-full bg-b1 px-3">
-                  Unlocks at 14,000 downloads
-                </div>
-                <h2 className="my-2 font-semibold text-center uppercase">
-                  {_('Toast')}
                 </h2>
               </div>
             </div>
